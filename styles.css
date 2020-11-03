@@ -27,9 +27,43 @@ justify-content: space-between;
 }
 
 .card {
-    background-color: blue;
+    position: relative;
+    background-color: rgb(0, 217, 255);
     height:175px;
     width:125px;
+    overflow:hidden;
 
+}
+
+.card-face {
+    position:absolute;
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border-radius:12px;
+    border-width: 1px;
+    border-style: solid;
+
+}
+
+.card-back {
+    background-color: aqua;
+    border-color: bisque;
+}
+
+.card-front {
+    transform: rotateX(180deg);
+}
+
+.anchor {
+    align-self:flex-start;
+    transform: translateY(-10px);
+    transition: transform 100ms ease-in-out;
+}
+
+card-back:hover .anchor {
+    transform: translateY(0)
 }
 
