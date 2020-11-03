@@ -27,8 +27,9 @@ justify-content: space-between;
 }
 
 .card {
-    background-color: black;
+    background-color: blue;
     height:175px;
     width:125px;
 
 }
+
