@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 .page-title {
     color: black;
     font-family:;
@@ -13,7 +33,7 @@ justify-content: space-between;
 }
 
 .game-info {
-    font-family:;
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
     color: black;
     font-size:4em;  
 }
@@ -28,7 +48,7 @@ justify-content: space-between;
 
 .card {
     position: relative;
-    background-color: rgb(0, 217, 255);
+    background-color: white;
     height:175px;
     width:125px;
     overflow:hidden;
@@ -49,8 +69,8 @@ justify-content: space-between;
 }
 
 .card-back {
-    background-color: aqua;
-    border-color: bisque;
+    background-color: white;
+    border-color: black;
 }
 
 .card-front {
@@ -58,12 +78,21 @@ justify-content: space-between;
 }
 
 .anchor {
-    align-self:flex-start;
+    width: 50px;
+    height: 50px;
     transform: translateY(-10px);
     transition: transform 100ms ease-in-out;
 }
 
 card-back:hover .anchor {
-    transform: translateY(0)
+    transform: translateY(0);
 }
+
+h1 {
+    font-family: 'Pacifico', cursive;
+}
+
+
+
+
 
