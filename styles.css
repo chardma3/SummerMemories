@@ -20,7 +20,7 @@ body {
 
 .page-title {
     color: black;
-    font-family:;
+    font-family: 'Pacifico', cursive;
     font-weight:normal;
     text-align:center;
     font-size:6em;
@@ -88,11 +88,14 @@ card-back:hover .anchor {
     transform: translateY(0);
 }
 
-h1 {
-    font-family: 'Pacifico', cursive;
+
+.btn-div {
+   
+    text-align: center;
 }
 
-
-
-
-
+.btn-group {
+   
+    text-align: center;
+    width: 540px;
+}
