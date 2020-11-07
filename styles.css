@@ -35,7 +35,7 @@ justify-content: space-between;
 .game-info {
     font-family:"Trebuchet MS", Helvetica, sans-serif;
     color: black;
-    font-size:4em;  
+    font-size:3em;  
 }
 
 .game-container {
@@ -62,7 +62,7 @@ justify-content: space-between;
     display: flex;
     justify-content: center;
     align-items:center;
-    border-radius:12px;
+    border-radius:1px;
     border-width: 1px;
     border-style: solid;
 
@@ -90,12 +90,15 @@ card-back:hover .anchor {
 
 
 .btn-div {
-   
     text-align: center;
 }
 
-.btn-group {
-   
-    text-align: center;
-    width: 540px;
+
+.btn {
+    margin: 20px;
+    width: 150px !important;
+}
+
+.start {
+    font-weight: bold;
 }
