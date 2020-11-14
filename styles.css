@@ -26,7 +26,7 @@ body {
 
 .page-title {
     color: black;
-    font-family: 'Pacifico', cursive;
+    font-family:'Pacifico', cursive;
     font-weight:normal;
     text-align:center;
     font-size:6em;
@@ -94,13 +94,13 @@ transform: rotateY(0);
     left:0;
     right:0;
     bottom:0;
+    z-index: 100; 
     display: none;
     position: fixed;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    z-index: 100; 
-    color:black;
+    color: #ee7752;
     font-family: 'Pacifico', cursive;
     transition: background-color 500ms, font-size 500ms;
 }
