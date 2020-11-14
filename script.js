@@ -50,14 +50,14 @@ class SummerMemories {
         setTimeout(() => {
             this.audioController.startMusic();
             this.shuffleCards(this.cardsArray);
-            this.countDown = this.startCountDown();
+            this.countdown = this.startCountdown();
             this.busy = false;
         }, 500)
         this.hideCards();
-        this.timer.innertext = this.timeRemaining;
+        this.timer.innerText = this.timeRemaining;
         this.ticker.innerText = this.totalClicks;
     } 
-    startCountDown() {
+    startCountdown() {
         return setInterval(() => {
             this.timeRemaining--;
             this.timer.innerText = this.timeRemaining;
@@ -97,22 +97,22 @@ class SummerMemories {
     }
     checkForCardMatch(card) {
         if(this.getCardType(card) === this.getCardType(this.cardToCheck))
-            this.cardMatch(card, this.cardTocheck);
+            this.cardMatch(card, this.cardToCheck);
         else
-            this.cardMisMatch(card, this.cardTocheck);
+            this.cardMismatch(card, this.cardToCheck);
 
-        this.cardTocheck = null;
+        this.cardToCheck = null;
     }
     cardMatch(card1, card2) {
         this.matchedCards.push(card1);
         this.matchedCards.push(card2);
-        card1.classList.add('Matched');
-        card2.classList.add('Matched');
+        card1.classList.add('matched');
+        card2.classList.add('matched');
         this.audioController.match();
         if(this.matchedCards.length === this.cardsArray.length)
             this.victory();
     }
-    cardMisMatch(card1, card2) {
+    cardMismatch(card1, card2) {
         this.busy = true;
         setTimeout(() => {
             card1.classList.remove('visible');
@@ -146,7 +146,7 @@ function ready() {
     let cards = Array.from(document.getElementsByClassName('card'));
     let game = new SummerMemories(100, cards);
 
-     overlays.forEach(overlay => {
+    overlays.forEach(overlay => {
         overlay.addEventListener('click', () => {
             overlay.classList.remove('visible');
             game.startGame();

@@ -33,9 +33,9 @@ body {
 }
 
 .game-info-container {
-grid-column: 1 / -1;
-display: flex;
-justify-content: space-between;
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
 }
 
 .game-info {
@@ -55,11 +55,10 @@ justify-content: space-between;
 
 .card {
     position: relative;
-    background-color: white;
+    overflow: hidden;
     height:175px;
     width:125px;
-    overflow:hidden;
-
+    
 }
 
 .card-face {
@@ -70,10 +69,11 @@ justify-content: space-between;
     justify-content: center;
     align-items:center;
     backface-visibility: hidden;
-    border-radius:1px;
+    border-radius:12px;
     border-width: 1px;
     border-style: solid;
     transition: transform 500ms ease-in-out;
+    overflow: hidden;
 
 }
 
@@ -82,11 +82,46 @@ transform: rotateY(-180deg);
 }
 
 .card.visible .card-front {
-transform: rotateY(0);
+    transform: rotateY(0);
 }
 
-.card.matched .card-value {
+.card.matched .card-front .card-value {
     animation: dance 1s linear infinite 500ms;
+}
+
+.card-back {
+    background-color: white;
+    transform: rotateY(0);
+
+}
+
+.card-front {
+    background-color: white;
+    transform: rotateY(180deg);
+}
+
+.card-front:hover .card-value {
+    transform: scale(1);
+}
+
+.card-value {
+    width: 50px;
+    height: 50px;
+    transform: scale(.9);
+    transition: transform 100ms ease-in-out;
+}
+
+.anchor {
+    width: 50px;
+    height: 50px;
+    transform: translateY(-10px);
+    transition: transform 100ms ease-in-out;
+}
+
+.card-back:hover .anchor {
+    transform: translateY(0);
+    height:60px;
+    width:60px;
 }
 
 .overlay-text {
@@ -100,7 +135,7 @@ transform: rotateY(0);
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: #ee7752;
+    color: pink;
     font-family: 'Pacifico', cursive;
     transition: background-color 500ms, font-size 500ms;
 }
@@ -138,40 +173,6 @@ transform: rotateY(0);
     }
 }
 
-.card-back {
-    background-color: white;
-    border-color: black;
-}
-
-.card-front {
-    background-color: white;
-    border-color: grey;
-    transform: rotateX(180deg);
-}
-
-.card-front:hover .card-value {
-    transform: scale(1);
-}
-
-.card-value {
-    width: 50px;
-    height: 50px;
-    transform: scale(.9);
-    transition: transform 100ms ease-in-out;
-}
-
-.anchor {
-    width: 50px;
-    height: 50px;
-    transform: translateY(-10px);
-    transition: transform 100ms ease-in-out;
-}
-
-.card-back:hover .anchor {
-    transform: translateY(0);
-    height:60px;
-    width:60px;
-}
 
 .btn-div {
     text-align: center;
