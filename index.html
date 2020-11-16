@@ -25,22 +25,22 @@
         <span class="overlay-text-small">Click To Restart</span>
     </div>
           <div class="btn-div">
-            <button type="button" class="btn btn-outline-dark btn-sm">Sound</button>
-            <button type="button" class="btn btn-outline-dark btn-sm start">Re/Start</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" id="soundBtn">Sound</button>
+            <button type="button" class="btn btn-outline-dark btn-sm start" id="startBtn" onclick="startGame()">Re/Start</button>
             <button type="button" class="btn btn-outline-dark btn-sm" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
             Instructions</button>
             <div class="collapse" id="collapseExample">
             <div class="card-body">
             Flip a card and find it's match. Matched cards stay upturned. Match all the cards before the time runs out to win
             <br>
-            Try to do it as quickly as possible!
+            Try to do it as quickly as possible with the least amount of flips!
             </div>
         </div>
         </div>
     <div class="game-container">
         <div class="game-info-container">
             <div class="game-info">
-                Time <span id="time-remaining">100</span> 
+                Time <span id="time-remaining">60</span> 
             </div>
             <div class="game-info">
                 Flips <span id="flips">0</span> 

@@ -1,3 +1,5 @@
+
+
 class AudioController {
     constructor() {
         this.bgMusic = new Audio('Assets/audio/waves.mp3');
@@ -135,16 +137,10 @@ class SummerMemories {
     }   
 }
 
-if (document.readyState == 'loading') {
-    document.addEventListener('DOMContentLoaded', ready);
-} else {
-    ready();
-}
-
 function ready() {
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
     let cards = Array.from(document.getElementsByClassName('card'));
-    let game = new SummerMemories(100, cards);
+    let game = new SummerMemories(3, cards);
 
     overlays.forEach(overlay => {
         overlay.addEventListener('click', () => {
@@ -152,15 +148,21 @@ function ready() {
             game.startGame();
         });
     });
-
+ 
     cards.forEach(card => {
         card.addEventListener('click', () => {
             game.flipCard(card);
         });
-    });
+    });     
 }
 
 
 
 
+
+if (document.readyState == 'loading') {
+    document.addEventListener('DOMContentLoaded', ready);
+} else {
+    ready();
+}
 
