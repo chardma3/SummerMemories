@@ -58,7 +58,6 @@ body {
     overflow: hidden;
     height:125px;
     width:125px;
-    
 }
 
 .card-face {
@@ -69,7 +68,6 @@ body {
     justify-content: center;
     align-items:center;
     backface-visibility: hidden;
-    
     transition: transform 500ms ease-in-out;
     overflow: hidden;
 
@@ -135,14 +133,11 @@ transform: rotateY(-180deg);
     flex-direction: column;
     color: pink;
     font-family: 'Pacifico', cursive;
-
     transition: background-color 500ms, font-size 500ms;
 }
 
 .overlay-text-small {
-    font-size: 6em;
-    flex-direction: column;
-    animation: overlay-grow 500ms forwards;
+    font-size: .3em;
 }
 
 .overlay-text.visible {
@@ -172,10 +167,8 @@ transform: rotateY(-180deg);
     }
 }
 
-
 .btn-div {
     text-align: center;
-    
 }
 
 .btn {

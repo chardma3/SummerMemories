@@ -140,7 +140,7 @@ class SummerMemories {
 function ready() {
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
     let cards = Array.from(document.getElementsByClassName('card'));
-    let game = new SummerMemories(3, cards);
+    let game = new SummerMemories(80, cards);
 
     overlays.forEach(overlay => {
         overlay.addEventListener('click', () => {
@@ -153,7 +153,10 @@ function ready() {
         card.addEventListener('click', () => {
             game.flipCard(card);
         });
-    });     
+    });    
+    game.addEventListener('click', () => {
+        document.getElementbyID("startBtn");
+    }); 
 }
 
 
