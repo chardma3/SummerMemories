@@ -2,6 +2,8 @@ $(function() {
     ready();
 });
 
+/** Audio Controller*/ 
+
 class AudioController {
   constructor() {
     this.bgMusic = new Audio("Assets/audio/waves.mp3");
@@ -34,6 +36,8 @@ class AudioController {
     this.gameOverSound.play();
   }
 }
+
+/**Game Class */
 
 class SummerMemories {
   constructor(totalTime, cards) {
@@ -139,6 +143,8 @@ class SummerMemories {
     );
   }
 }
+
+/**Functions */
 
 function ready() {
   let overlays = Array.from(document.getElementsByClassName("overlay-text"));

@@ -31,6 +31,7 @@ body {
     text-align:center;
     font-size:4em;
 }
+/* containers */
 
 .game-info-container {
     grid-column: 1 / -1;
@@ -52,6 +53,7 @@ body {
     justify-content: center;
     perspective: 500px;
 }
+/* cards */
 
 .card {
     position: relative;
@@ -70,7 +72,6 @@ body {
     backface-visibility: hidden;
     transition: transform 500ms ease-in-out;
     overflow: hidden;
-
 }
 
 .card.visible .card-back {
@@ -88,7 +89,6 @@ transform: rotateY(-180deg);
 .card-back {
     background-color: white;
     transform: rotateY(0);
-
 }
 
 .card-front {
@@ -119,6 +119,8 @@ transform: rotateY(-180deg);
     height:65px;
     width:65px;
 }
+
+/* overlays */
 
 .overlay-text {
     top: 0;
@@ -167,6 +169,8 @@ transform: rotateY(-180deg);
     }
 }
 
+/* buttons */
+
 .btn-div {
     text-align: center;
 }
@@ -183,6 +187,8 @@ transform: rotateY(-180deg);
     font-weight: bold;
     font-style: italic;
 }
+
+/* media queries */
 
 @media (max-width:600px) {
     .game-container {
