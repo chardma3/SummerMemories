@@ -9,7 +9,7 @@ class AudioController {
     this.bgMusic = new Audio("Assets/audio/waves.mp3");
     this.flipSound = new Audio("Assets/audio/flip.mp3");
     this.matchSound = new Audio("Assets/audio/match.mp3");
-    this.victorySound = new Audio("Assets/audio/victory.mp3");
+    this.winSound = new Audio("Assets/audio/win.mp3");
     this.gameOverSound = new Audio("Assets/audio/gameOver.mp3");
     this.bgMusic.volume = 0.5;
     this.bgMusic.loop = true;
@@ -27,9 +27,9 @@ class AudioController {
   match() {
     this.matchSound.play();
   }
-  victory() {
+  win() {
     this.stopMusic();
-    this.victorySound.play();
+    this.winSound.play();
   }
   gameOver() {
     this.stopMusic();
@@ -77,10 +77,10 @@ class SummerMemories {
     this.audioController.gameOver();
     document.getElementById("game-over-text").classList.add("visible");
   }
-  victory() {
+  win() {
     clearInterval(this.countdown);
-    this.audioController.victory();
-    document.getElementById("victory-text").classList.add("visible");
+    this.audioController.win();
+    document.getElementById("win-text").classList.add("visible");
   }
   hideCards() {
     this.cardsArray.forEach((card) => {
@@ -115,7 +115,7 @@ class SummerMemories {
     card1.classList.add("matched");
     card2.classList.add("matched");
     this.audioController.match();
-    if (this.matchedCards.length === this.cardsArray.length) this.victory();
+    if (this.matchedCards.length === this.cardsArray.length) this.win();
   }
   cardMismatch(card1, card2) {
     this.busy = true;
