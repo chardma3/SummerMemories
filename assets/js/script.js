@@ -2,7 +2,7 @@ $(function() {
     ready();
 });
 
-/** Audio Controller*/ 
+/*----------------- audio controller class ----------------*/
 
 class AudioController {
   constructor() {
@@ -13,30 +13,36 @@ class AudioController {
     this.gameOverSound = new Audio("assets/audio/gameOver.mp3");
     this.bgMusic.loop = true;
   }
+  
   startMusic() {
     this.bgMusic.play();
   }
+
   stopMusic() {
     this.bgMusic.pause();
     this.bgMusic.currentTime = 0;
   }
+
   flip() {
     this.flipSound.play();
   }
+
   match() {
     this.matchSound.play();
   }
+
   win() {
     this.stopMusic();
     this.winSound.play();
   }
+
   gameOver() {
     this.stopMusic();
     this.gameOverSound.play();
   }
 }
 
-/**Game Class */
+/*----------------- game class ----------------*/
 
 class SummerMemories {
   constructor(totalTime, cards) {
@@ -64,6 +70,7 @@ class SummerMemories {
     this.timer.innerText = this.timeRemaining;
     this.ticker.innerText = this.totalClicks;
   }
+
   startCountdown() {
     return setInterval(() => {
       this.timeRemaining--;
@@ -71,22 +78,26 @@ class SummerMemories {
       if (this.timeRemaining === 0) this.gameOver();
     }, 1000);
   }
+
   gameOver() {
     clearInterval(this.countdown);
     this.audioController.gameOver();
     document.getElementById("game-over-text").classList.add("visible");
   }
+
   win() {
     clearInterval(this.countdown);
     this.audioController.win();
     document.getElementById("win-text").classList.add("visible");
   }
+
   hideCards() {
     this.cardsArray.forEach((card) => {
       card.classList.remove("visible");
       card.classList.remove("matched");
     });
   }
+
   flipCard(card) {
     if (this.canFlipCard(card)) {
       this.audioController.flip();
@@ -101,6 +112,7 @@ class SummerMemories {
       }
     }
   }
+
   checkForCardMatch(card) {
     if (this.getCardType(card) === this.getCardType(this.cardToCheck))
       this.cardMatch(card, this.cardToCheck);
@@ -108,6 +120,7 @@ class SummerMemories {
 
     this.cardToCheck = null;
   }
+
   cardMatch(card1, card2) {
     this.matchedCards.push(card1);
     this.matchedCards.push(card2);
@@ -116,6 +129,7 @@ class SummerMemories {
     this.audioController.match();
     if (this.matchedCards.length === this.cardsArray.length) this.win();
   }
+
   cardMismatch(card1, card2) {
     this.busy = true;
     setTimeout(() => {
@@ -124,6 +138,7 @@ class SummerMemories {
       this.busy = false;
     }, 1000);
   }
+
   shuffleCards(cardsArray) {
     for (let i = cardsArray.length - 1; i > 0; i--) {
       let randIndex = Math.floor(Math.random() * (i + 1));
@@ -131,6 +146,7 @@ class SummerMemories {
       cardsArray[i].style.order = randIndex;
     }
   }
+
   getCardType(card) {
     return card.getElementsByClassName("card-value")[0].src;
   }
@@ -143,7 +159,7 @@ class SummerMemories {
   }
 }
 
-/**Functions */
+/*----------------- functions ----------------*/
 
 function ready() {
   const overlays = Array.from(document.getElementsByClassName("overlay-text"));
