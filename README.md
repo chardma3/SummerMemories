@@ -5,7 +5,7 @@
 Summer Memories is a summer themed memory card game with a timer and a flips monitoring function to count how many flips were used.
 The website is responsive and available on desktop, laptops, tablets and mobile devices.
 
-<h2 align="center"><https://github.com/chardma3/SummerMemories/blob/master/assets/images/Mockup.jpg></h2>
+<h2 align="center"><img src="https://github.com/chardma3/SummerMemories/blob/master/assets/images/Mockup.jpg"></h2>
 
 
 ## User Experience (UX)
