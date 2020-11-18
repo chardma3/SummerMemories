@@ -31,7 +31,7 @@ body {
     text-align:center;
     font-size:4em;
 }
-/* containers */
+/*----------------- containers ----------------*/
 
 .game-info-container {
     grid-column: 1 / -1;
@@ -53,7 +53,7 @@ body {
     justify-content: center;
     perspective: 500px;
 }
-/* cards */
+/*----------------- cards ----------------*/
 
 .card {
     position: relative;
@@ -120,7 +120,7 @@ transform: rotateY(-180deg);
     width:65px;
 }
 
-/* overlays */
+/*----------------- overlays ----------------*/
 
 .overlay-text {
     top: 0;
@@ -169,7 +169,7 @@ transform: rotateY(-180deg);
     }
 }
 
-/* buttons */
+/*----------------- buttons ----------------*/
 
 .btn-div {
     text-align: center;
@@ -188,7 +188,7 @@ transform: rotateY(-180deg);
     font-style: italic;
 }
 
-/* media queries */
+/*----------------- media queries ----------------*/
 
 @media (max-width:600px) {
     .game-container {
@@ -199,4 +199,29 @@ transform: rotateY(-180deg);
     flex-direction: column;
     align-items: center;
     }
+@keyframes overlay-grow {
+    from {
+        background-color: black;
+        font-size: 0;
+    }
+    to {
+        background-color: rgba(0, 0, 0, .8);
+        font-size: 6em;
+        text-align: center;
+    }
+}
+}
+
+@media (max-width:768px) {
+    @keyframes overlay-grow {
+    from {
+        background-color: black;
+        font-size: 0;
+    }
+    to {
+        background-color: rgba(0, 0, 0, .8);
+        font-size: 6em;
+        text-align: center;
+    }
+}
 }

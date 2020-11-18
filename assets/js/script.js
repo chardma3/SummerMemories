@@ -146,9 +146,9 @@ class SummerMemories {
 /**Functions */
 
 function ready() {
-  let overlays = Array.from(document.getElementsByClassName("overlay-text"));
-  let cards = Array.from(document.getElementsByClassName("card"));
-  let game = new SummerMemories(80, cards);
+  const overlays = Array.from(document.getElementsByClassName("overlay-text"));
+  const cards = Array.from(document.getElementsByClassName("card"));
+  const game = new SummerMemories(80, cards);
   const startBtn = document.getElementById("startBtn");
 
   overlays.forEach((overlay) => {
