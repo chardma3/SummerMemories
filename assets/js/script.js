@@ -6,11 +6,11 @@ $(function() {
 
 class AudioController {
   constructor() {
-    this.bgMusic = new Audio("./audio/waves.mp3");
-    this.flipSound = new Audio("./audio/flip.mp3");
-    this.matchSound = new Audio("./audio/match.mp3");
-    this.winSound = new Audio("./audio/win.mp3");
-    this.gameOverSound = new Audio("./audio/gameOver.mp3");
+    this.bgMusic = new Audio("assets/audio/waves.mp3");
+    this.flipSound = new Audio("assets/audio/flip.mp3");
+    this.matchSound = new Audio("assets/audio/match.mp3");
+    this.winSound = new Audio("assets/audio/win.mp3");
+    this.gameOverSound = new Audio("assets/audio/gameOver.mp3");
     this.bgMusic.loop = true;
   }
   startMusic() {
