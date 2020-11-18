@@ -5,6 +5,8 @@
 Summer Memories is a summer themed memory card game with a timer and a flips monitoring function to count how many flips were used.
 The website is responsive and available on desktop, laptops, tablets and mobile devices.
 
+<h2 align="center"><https://github.com/chardma3/SummerMemories/blob/master/assets/images/Mockup.jpg></h2>
+
 
 ## User Experience (UX)
 The game is for those who wish to relax, enjoy themselves and test their memory. The game has functional buttons at the top to explain how the game is played and to restart the game.
@@ -41,7 +43,7 @@ The game is for those who wish to relax, enjoy themselves and test their memory.
 *The game info section shows the user information reagrding the game. I.e. how many seconds thay have left and how many times they have flipped a card.
 
 **Features Left to Implement**  
-*In the future I would like to implement a high score tally so that the user can attempt to better their score which would make the user more likely to return to the game.
+*In the future I would like to implement a sound button so that the user can toggle the sound on and off. I would also like to implement a high score tally so that the user can attempt to better their score which would make the user more likely to return to the game.
 
 ## Technologies Used
 
@@ -58,13 +60,13 @@ The game is for those who wish to relax, enjoy themselves and test their memory.
 1. [Google Fonts:](https://fonts.google.com/)
     - Google fonts were used to import the heading font of Pacifico cursive and Trebuchet.
 1. [jQuery:](https://jquery.com/)
-    - jQuery came with Bootstrap to make Bootstrap work and to write Javascript more quickly.
+    - To make Bootstrap work and to write Javascript more quickly.
 1. [Git](https://git-scm.com/)
     - Git was used for version control by using the Gitpod terminal to commit to Git and Push to GitHub.
 1. [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
 1. [Photoshop:](https://www.adobe.com/ie/products/photoshop.html)
-    - Photoshop was used for manipulating images, creating favicon and creating the wireframes during the dsign process.
+    - Photoshop was used for manipulating images, creating favicon and creating the wireframes during the design process.
 
 ## Testing
 
@@ -73,6 +75,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 -   [W3C Markup Validator](https://validator.w3.org/) - To test for errors in html
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - To test for errors in css
 -   [GTmetrix](https://gtmetrix.com/) - To test website loading times
+-   [JSHint](https://jshint.com/) - To test website for JS errors
 
 ### Testing User Stories from User Experience (UX) Section
 
@@ -100,7 +103,7 @@ The website is responsive and diplays the four by four grid on desktop screen an
 The site is hosted on Github pages.
 
 This project has been deployed to Github by doing the following:
-1. Login to GitHub and locate the required [GitHub Repository](https://chardma3.github.io/SummerMemories/)
+1. Login to GitHub and locate the required [GitHub Repository](https://github.com/chardma3/SummerMemories)
 2. At the top of the Repository locate the "Settings" Button on the menu.
 3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
 4. Under "Source", click the dropdown called "None" and select "Master Branch".
@@ -124,7 +127,6 @@ Images used in the game have been sourced from Freepik which are available for p
 
 ### Acknowledgements
 
-- I received inspiration for this project from the whiskey drop project and resume project in the lesson videos. I also recieved inspiration for the background images from a previous student project 
-that my mentor showed me (https://github.com/D1ang/EL1TE)
+- I received found inspiration and coding ideas from a number of youtube tutorials. And built this (mostly) in pure javascript without the use of a library. These were: JavaScript Snake Game Tutorial Using Functional Programming found at https://www.youtube.com/watch?v=bRlvGoWz6Ig&t=3141s, Memory Game in JavaScript found at https://www.youtube.com/watch?v=tjyDOHzKN0w and Memory Card Game found at https://www.youtube.com/watch?v=ZniVgo8U7ek. I also used the Fisher Yates  shuffle code snippet found on Wikipedia. Address:https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle
 
 -  Thanks to my mentor for advising me and helping me make the project better
