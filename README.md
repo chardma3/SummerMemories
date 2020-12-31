@@ -78,10 +78,14 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - To test for errors in css
 -   [GTmetrix](https://gtmetrix.com/) - To test website loading times
 -   [JSHint](https://jshint.com/) - To test website for JS errors
--   BUGS FOUND
-    Hyphens in HTML comments have been fixed. My mentor said that I should extend the size of my comments to make them easier to read. However this was wrong. This has been rectified.
-    Alt tags - I ran the validator and then forgot to do it. Alt tags for screen readers are now available.
-    JS scripts were loaded outside the head and body - they were just before the closing 'html' tag; they should have been just before the closing 'body' tag. Initially the JS script was in the header tag but my mentor said that they should be after the closing body tag. This has been rectified and are now in the header tag.
+
+### Bugs Found
+-   The alt tags were not filled in. I ran the validator and then forgot to do it. Alt tags for screen readers are now available.
+-   Hyphens in HTML comments have been fixed. My mentor said that I should extend the size of my comments to make them easier to read. However this was wrong. This has been rectified.
+-   JS scripts were loaded outside the head and body - they were just before the closing 'html' tag; they should have been just before the closing 'body' tag. Initially the JS script was in the header tag but my mentor said that they should be after the closing body tag. This has been rectified and are now in the header tag.
+    
+### Automated testing
+-   Automated testing has been done and it conforms to screen readers and is error free
 
 ### Testing User Stories from User Experience (UX) Section
 
