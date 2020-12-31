@@ -26,8 +26,9 @@ The game is for those who wish to relax, enjoy themselves and test their memory.
         -   The images are elegant yet simple illustrations of things usually associated with summer and specifically beach life.
         
 *   ### Wireframe
-
-    -   The link to the pdf file with wireframes for desktop, tablet and mobile devices can be viewed here - [View](https://github.com/chardma3/SummerMemories/tree/master/assets/wireframes)
+    -Wireframes were done in photoshop. The size of the cards aren't exactly the same showing that it wasn't a screenshot. I got the idea of doing wireframes in photoshop from the the example project for Milestone 1 
+    which my mentor showed me. The link to which is here [View](https://github.com/D1ang/EL1TE)  
+    The link to the pdf file with wireframes for desktop, tablet and mobile devices can be viewed here - [View](https://github.com/chardma3/SummerMemories/tree/master/assets/wireframes)
 
 ## Features
 
@@ -44,6 +45,7 @@ The game is for those who wish to relax, enjoy themselves and test their memory.
 
 **Features Left to Implement**  
 *In the future I would like to implement a sound button so that the user can toggle the sound on and off. I would also like to implement a high score tally so that the user can attempt to better their score which would make the user more likely to return to the game.
+*I have decided not to implement an introduction before the game commences as there is an instructions button as well as a restart button so that if the user wishes to see the instructions they can and then restart the game. I felt it would be redundant and a bad user experience.
 
 ## Technologies Used
 
@@ -76,6 +78,10 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - To test for errors in css
 -   [GTmetrix](https://gtmetrix.com/) - To test website loading times
 -   [JSHint](https://jshint.com/) - To test website for JS errors
+-   BUGS FOUND
+    Hyphens in HTML comments have been fixed. My mentor said that I should extend the size of my comments to make them easier to read. However this was wrong. This has been rectified.
+    Alt tags - I ran the validator and then forgot to do it. Alt tags for screen readers are now available.
+    JS scripts were loaded outside the head and body - they were just before the closing 'html' tag; they should have been just before the closing 'body' tag. Initially the JS script was in the header tag but my mentor said that they should be after the closing body tag. This has been rectified and are now in the header tag.
 
 ### Testing User Stories from User Experience (UX) Section
 
